@@ -61,8 +61,21 @@
 
 
 }
+ 
+@media screen and ( max-width : 380px ) {
+    #hero .order-1 {
+        text-align: center;
+        justify-content: center;
+    }
 
-@media screen and ( max-width : 350px ) {
+    #skill h3,p {
+        font-size: small;
+    }
+    #hero {
+        text-align: center;
+        justify-content: center;
+
+    }
     #skill p{
         text-align: justify !important;
     }
@@ -70,11 +83,10 @@
         width: auto !important;
         font-size: small;
 
-
-
     }
     #hero .row {
         padding-bottom: 90px;
+        position: relative;
     }
     #portofolio .col-md-12 {
         flex-direction: column;
