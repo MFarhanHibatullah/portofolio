@@ -8,7 +8,33 @@
     }
 }
 
-@media screen and ( max-width : 768px ) {
+@media (max-width: 768px) {
+    #hero .order-1{
+        text-align: center;
+        justify-content: center;
+    }
+    #hero p{
+        font-size: 0.7rem;
+    }
+    #hero a{
+        font-size: 0.8rem;
+    }
+    #hero h1{
+        font-size: 1.2rem;
+    }
+    #skill h3 {
+        justify-content: center;
+        margin-left: -49px;
+
+    }
+    #hero {
+        text-align: center;
+        justify-content: center;
+
+    }
+    #hero .row{
+        position: relative;
+    }
     #hero img {
         width: 50%;
     }
@@ -40,6 +66,9 @@
         padding-right: 30px !important;
         margin-top: 20px;
     }
+    #portofolio .col-md-12 {
+        flex-direction: column;
+    }
 }
 
 @media screen and ( max-width : 576px ) {
@@ -62,13 +91,13 @@
 
 }
  
-@media screen and ( max-width : 380px ) {
+@media screen and ( max-width : 400px ) {
     #hero .order-1 {
         text-align: center;
         justify-content: center;
     }
 
-    #skill h3,p {
+    #skill p {
         font-size: small;
     }
     #hero {
@@ -81,7 +110,6 @@
     }
     #skill .card {
         width: auto !important;
-        font-size: small;
 
     }
     #hero .row {

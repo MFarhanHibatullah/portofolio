@@ -103,38 +103,42 @@ hr {
     padding-bottom: 80px;
     margin-bottom: 80px;
 }
-
 #skill {
-    min-height:600px;
+    min-height: 100px; /* Sesuaikan tinggi minimal */
     width: 100%;
-    color:var(--fontColor);
+    color: var(--fontColor);
+    padding: 50px 0; /* Memberikan jarak pada bagian atas dan bawah */
 }
-#skill p,h3 {
-    color:var(--fontColor);
+
+#skill p {
+    color: var(--fontColor);
 }
 
 #skill img {
-    width : 12%;
-    margin : 10px;
+    width: 12%;
+    margin: 10px;
+    max-width: 100%; /* Supaya gambar tidak terdistorsi di ukuran layar kecil */
 }
 
 #skill .card {
     background-color: var(--mainColor);
     height: auto;
     border-radius: 15px;
-    width: auto;
-    font-size: small;
-    box-shadow: 2px 2px 2px 2px var(--ascentColor);
+    width: 100%; /* Membuat card lebih responsif */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #skill .card:hover {
     background-color: var(--ascentColor);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Menambah efek bayangan pada hover */
 }
 
 #skill-konten {
-    margin-top: 120px;
-
+    margin-top: 50px;
 }
+
 
 #sertifikat {
     margin-top: -170px;
