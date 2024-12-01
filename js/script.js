@@ -29,3 +29,32 @@ const observer = new IntersectionObserver((entries) => {
 });
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+// Get modal elements
+const modal = document.getElementById("imageModal");
+const modalImage = document.getElementById("modalImage");
+const captionText = document.getElementById("caption");
+const closeBtn = document.querySelector(".close");
+
+
+const images = document.querySelectorAll(".clickable-image");
+
+images.forEach((img) => {
+  img.addEventListener("click", () => {
+    modal.style.display = "block";
+    modalImage.src = img.src;
+    captionText.textContent = img.alt;
+  });
+});
+
+
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
